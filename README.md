@@ -16,6 +16,7 @@ The Odd One is a intuitive website targeted for future first-generation and low-
 <img src="src/assets/displayList.svg" width= 400px>
 </div>
 
+* Figma: [https://www.figma.com/file/83a4xoaCCYgpmja7pizuPB/The-Odd-One-UX-Design?node-id=0%3A1]
 # 🚀 MVP
 
 ### API Endpoints:
