@@ -41,7 +41,7 @@ The Odd One is a intuitive website targeted for future first-generation and low-
 <img src="src/assets/doelogo.png" width=100px>
 </div>
 
-**US Department of Education College Scorecard API:**
+**US Department of Education College Scorecard API**
 
 https://collegescorecard.ed.gov/data/documentation/
 
@@ -84,13 +84,11 @@ phase-2-project/
 # 📦 Dependencies:
 
 Front-End:
-
 - Axios
 - HTML
 - CSS
 
 Backend:
-
 - JavaScript
 - Netlify
 
