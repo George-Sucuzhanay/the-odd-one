@@ -2,7 +2,7 @@
 
 # ✨The Odd One✨
 
-The Odd One is a intuitive website targeted for future first-generation and low-income college students. The goal is to help these students understand how well they will be supported at these higher education institutions. By using public data from the US Department of Education these students are able to make greater decisions on their college choice based on location, tuition based on income, and retention of first gen students. Often times this data is not readily available and can I face be crucial to students college admission process.
+The Odd One is a intuitive website targeted for future first-generation and low-income college students. The goal is to help these students understand how well they will be supported at these higher education institutions. By using public data from the US Department of Education these students are able to make greater decisions on their college search based on location, tuition based on income, and retention of first gen students. Often times this data is not readily available and can be crucial to students college admission process.
 
 
 # 👩🏽‍🚀 Features
