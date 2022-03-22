@@ -11,8 +11,8 @@ The Odd One is a intuitive website targeted for future first-generation and low-
 * find resources on finalizing a college search
 
 # Wireframe
-<img src="src/assets/homepage.svg">
-<img src="src/assets/displayList.svg">
+<img src="src/assets/homepage.svg" width= 100px>
+<img src="src/assets/displayList.svg" width= 100px>
 
 
 # 🚀 MVP
