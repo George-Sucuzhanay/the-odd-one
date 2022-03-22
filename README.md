@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# ✨The Odd One✨
+The Odd One is a intuitive website targeted for future first-generation and low-income college students. The goal is to help these students understand how well they will be supported at these higher education institutions. By using public data from the US Department of Education these students are able to make greater decisions on their college choice based on location, tuition based on income, and retention of first gen students. Often times this data is not readily available and can I face be crucial to students college admission process.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## 👩🏽‍🚀 Features
+* find the nearest colleges based on zip code
+* search for specific college and their relation to first-gen college students
+* find resources on finalizing a college search
 
-In the project directory, you can run:
+# Wireframe
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# 🚀 MVP
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### API Endpoints:
+* zip code college search within 10 miles
+* search query parameter
+### API Fields Used:
 
-### `npm test`
+* college name
+* college zipcode
+* college size
+* student share of first generation students
+* college state
+* college url
+* retention of completion of either first gen and/or low income
+* financial aid calculator url
+* id
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# 🔨 API
 
-### `npm run build`
+**US Department of Education College Scorecard API:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+https://collegescorecard.ed.gov/data/documentation/
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+We are able to access a storage of data concerning colleges throughout the US. It was interesting to see so much data about students, some categories in this api were more specific than others.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+# 🗒️ Component Hierarchy
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+phase-2-project/
+  README.md
+  node_modules/
+  package.json
+  public/
+    index.html
+  src/
+    Components/
+        HomePage.js
+        SearchQuery.js
+            DisplaySearchColleges.js (useState/class component)
+                SetSearchCollege.js (takes in props/functional component)
+        LocationQuery.js
+            DisplayLocationColleges.js (useState/class component)
+                SetLocationCollege.js (takes in props/functional component)
+    App.css
+    App.js
+    index.js
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# 🥳 Post-MVP:
 
-## Learn More
+### Future Features
+- using conditionals in our api calls to return population of first generation college students greater than 25%
+- comparison tool of two or 3 colleges similar to Apple’s comparison tool
+- dedicated page on final deciding factors which comes down to college offers with better financial aid or greater academic programs (psst…finding that balance is important)
+- plan on using material design, maybe tailwinds and/or React component styling
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# 📦 Dependencies:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Front-End:
 
-### Code Splitting
+- Axios
+- HTML
+- CSS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Backend:
 
-### Analyzing the Bundle Size
+- JavaScript
+- Netlify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# 👨‍💻 Author
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- George Sucuzhanay - [Linkedin](https://www.linkedin.com/in/georgesucuzhanay/)
