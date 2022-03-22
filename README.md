@@ -36,7 +36,7 @@ The Odd One is a intuitive website targeted for future first-generation and low-
 # 🔨 API
 
 **US Department of Education College Scorecard API:**
-<img src="src/assets/doelogo.png" width=200px>
+<img src="src/assets/doelogo.png" width=50px>
 
 https://collegescorecard.ed.gov/data/documentation/
 
