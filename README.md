@@ -21,7 +21,7 @@ The Odd One is a intuitive website targeted for future first-generation and low-
 # 🚀 MVP
 
 ### API Endpoints:
-* zip code college search within 10 miles
+* college search by zipcode within 10 miles
 * search query parameter
 ### API Fields Used:
 
