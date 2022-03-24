@@ -46,6 +46,7 @@ function SearchColleges(){
                         tuitionLowPrivate={latest.cost.net_price.private.by_income_level["0-30000"]}
                         percentFirst={String(latest.student.share_firstgeneration).slice(2,4)}
                         finaidLink={school.price_calculator_url}
+                        medianIncome={latest.earnings["10_yrs_after_entry"].consumer.overall_median}
                         key={index} 
                         />
                 )
