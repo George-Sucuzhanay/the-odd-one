@@ -53,11 +53,7 @@ We are able to access a storage of data concerning colleges throughout the US. I
 
 ```
 phase-2-project/
-  README.md
-  node_modules/
-  package.json
-  public/
-    index.html
+  ...
   src/
     Components/
         HomePage.js
@@ -67,9 +63,7 @@ phase-2-project/
         LocationQuery.js
             DisplayLocationColleges.js (useState/class component)
                 SetLocationCollege.js (takes in props/functional component)
-    App.css
-    App.js
-    index.js
+    ...
 
 ```
 
