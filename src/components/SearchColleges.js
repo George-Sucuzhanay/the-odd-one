@@ -26,6 +26,10 @@ function SearchColleges(){
             {console.log(colleges)}
 
 
+            <input className="myInput"placeholder="Enter College Name"type="text" id="fname" name="fname"/>
+            <button type="button">Click Me!</button>
+            <br></br>
+            <br></br>
             <div className="main-div">
                  {(colleges || []).map((college, index) => {
                 const { school, latest } = college;
@@ -35,8 +39,13 @@ function SearchColleges(){
                         name={school.name} 
                         schoolUrl={school.school_url} 
                         state={school.state}
-                        zip={latest.school.zip}
+                        zip={latest.school.zip.slice(0,5)}
                         size={latest.student.size}
+                        coa={latest.cost.attendance.academic_year}
+                        tuitionLowPublic={latest.cost.net_price.public.by_income_level["0-30000"]}
+                        tuitionLowPrivate={latest.cost.net_price.private.by_income_level["0-30000"]}
+                        percentFirst={String(latest.student.share_firstgeneration).slice(2,4)}
+                        finaidLink={school.price_calculator_url}
                         key={index} 
                         />
                 )
