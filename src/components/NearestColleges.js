@@ -3,7 +3,7 @@
 function NearestColleges(){
     return(
         <div>
-            <h1>My NearestColleges</h1>
+            <h1>My NearestColleges wow</h1>
         </div>
     )
 }

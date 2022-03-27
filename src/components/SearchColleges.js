@@ -1,19 +1,30 @@
+import axios from "axios"
 import { useState, useEffect } from "react"
-import SearchQueryResults from "../services/Constants"
 import SetCollege from "./SetCollege"
 
 function SearchColleges(){
 
     const [colleges, setColleges] = useState([])
+    const [searchWord, setSearchWord] = useState("CUNY")
 
-    const gettingResults = async() => {
-        const response = await SearchQueryResults()
-        const { results } = response.data;
-        setColleges(results)
-    }
     useEffect(() => {
         gettingResults()
     }, [])
+
+    const gettingResults = async() => {
+        try{
+            const BASE_URL = `https://api.data.gov/ed/collegescorecard/v1/schools.json?&school.name=${searchWord}&page=0&api_key=${process.env.REACT_APP_API_KEY}`;
+            
+            const response = await axios.get(BASE_URL)
+            const { results } = response.data;
+            console.log(results)
+            setColleges(results)
+        }
+        catch(error) {
+            console.log(error)
+        }
+    }
+   
 
 
     if (!colleges.length) return <h3>Loading...</h3>;
@@ -23,11 +34,12 @@ function SearchColleges(){
 
             <h1>My Search</h1>
 
-            {console.log(colleges)}
 
 
-            <input className="myInput"placeholder="Enter College Name"type="text" id="fname" name="fname"/>
-            <button type="button">Click Me!</button>
+            <input value={searchWord} onChange={(e) => setSearchWord(e.target.value)} className="myInput" placeholder="Enter College Name"/>
+
+            <button onClick={gettingResults}type="button">Click Me!</button>
+
             <br></br>
             <br></br>
             <div className="main-div">
