@@ -9,25 +9,24 @@ import NotFound from './components/NotFound'
 function App() {
   return (
     <div className="App">
-      <div>
-            <h1>This is my header</h1>
-            <img src={logo} alt="The Odd One Logo" width="500"/>
-      </div>
+    
       <div className='links'>
-        <nav>
+        <div className='mainLogo'>
+          <img id="mainlogo"src={logo} alt="The Odd One Logo" width="500"/>
+        </div>
+        <nav className='mainNavs'>
           <NavLink to={"/"}>Home</NavLink>
           <NavLink to={"/SearchColleges"}>Search Colleges</NavLink>
           <NavLink to={"/NearestColleges"}>Nearest Colleges</NavLink>
         </nav>
       </div>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/SearchColleges" element={<SearchColleges/>}/>
-        <Route path="/NearestColleges" element={<NearestColleges/>}/>
-        <Route path="*" element={<NotFound/>}/>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/SearchColleges" element={<SearchColleges/>}/>
+          <Route path="/NearestColleges" element={<NearestColleges/>}/>
+          <Route path="*" element={<NotFound/>}/>
 
-      </Routes>
-
+        </Routes>
     </div>
   );
 }
