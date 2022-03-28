@@ -9,7 +9,7 @@ const SetCollege = ({name, schoolUrl, state, zip, size, coa, tuitionLowPublic, t
                 <h1 className="collegeName">{name}</h1>
             </a>
             <h2 className="subheading">{state}, {zip}</h2>
-            <h2 className="subheading">College Size: {size}</h2>
+            <h2 className="subheading">College Size: {size ? size.toLocaleString('en-US'): "N/A"}</h2>
             <div className="mainSubDiv">
                 <div className="row">
                     <div className="innerDivItems">
@@ -17,7 +17,7 @@ const SetCollege = ({name, schoolUrl, state, zip, size, coa, tuitionLowPublic, t
                     </div>
 
                     <div className="innerDivItems">
-                        <h3>{coa ? "$" + coa + "/per year" : "N/A"}</h3>
+                        <h3>{coa ? "$" + coa.toLocaleString('en-US') + "/per year" : "N/A"}</h3>
                     </div>
 
                 </div>
@@ -26,7 +26,7 @@ const SetCollege = ({name, schoolUrl, state, zip, size, coa, tuitionLowPublic, t
                         <h3>Tuition for Low-Income:</h3>
                     </div>
                     <div className="innerDivItems">
-                        <h3>{ tuitionLowPublic ? "$" + (tuitionLowPublic) : (tuitionLowPrivate)?  "$" + (tuitionLowPrivate): ("N/A")}</h3>
+                        <h3>{ tuitionLowPublic ? "$" + (tuitionLowPublic.toLocaleString('en-US')) : (tuitionLowPrivate)?  "$" + (tuitionLowPrivate.toLocaleString('en-US')): ("N/A")}</h3>
                     </div>
                 </div>
                 <div className="row">
@@ -47,7 +47,7 @@ const SetCollege = ({name, schoolUrl, state, zip, size, coa, tuitionLowPublic, t
                         
                     </div>
                     <div className="innerDivItems">
-                        <h3>${medianIncome}</h3>
+                        <h3>${medianIncome.toLocaleString('en-US')}</h3>
                     </div>
 
                 </div>
