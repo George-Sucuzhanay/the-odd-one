@@ -1,4 +1,4 @@
-![](src/assets/logo.png)
+![](src/assets/logo1.png)
 
 # ✨The Odd One✨
 
