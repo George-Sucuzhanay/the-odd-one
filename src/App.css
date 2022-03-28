@@ -14,7 +14,24 @@
   width: 34%;
   margin-top:8px;
 }
+.homeDiv{
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+}
+.homeSubDiv {
+  display: inline-block;    
 
+
+  text-align: right;
+}
+
+.subDiv h1{
+  font-size: 50px;
+}
+.subDiv h3{
+  font-size: 20px;
+}
 .mainNavs {
   justify-content: flex-end;
 }
@@ -29,7 +46,7 @@ button:active {
   font-weight: 700;
   border-bottom: 2px solid #0088d1;
   text-decoration: none;
-  padding: 2em 7em 2.0em 3.4em;
+  padding: 2em 3em 2em 2.4em;
   transition: all 0.4s;
 }
 .links nav a:hover {
@@ -52,6 +69,8 @@ button:active {
 }
 .search{
   text-align: center;
+  width: 100%;
+            margin-bottom: 10px;
 }
 .subheading{
   font-size: 18px;
@@ -65,39 +84,51 @@ button:active {
 
 
 }
-
-.innerDiv{
-  display: flex;
-  align-items: center;
-}
 .innerDivItems{
   width: 50%;
 }
 .myInput{
-  width: 380px;
-  height: 40px;
-  border-radius: 12px;
+
+  width: 20%;
+  padding: 10px;
+  text-align: center;
+  border-radius: 12px
+
 
 }
-.item{
+.fa-solid {
+  padding: 10px;
+  min-width: 40px;
+  position: absolute;
+}
+.searchDiv{
   flex-basis:30%;
   background-color: #D1F4FF;
   border-radius: 15px;
 }
   
 
-.innerDiv{
+.mainSubDiv{
 
   align-items: center;
-  background: #FFFFFF;
+  background: #ffffff;
   border: 2px solid #000000;
   box-sizing: border-box;
   border-radius: 15px;
-  margin: 0;
+  margin: 20px;
   top: 50%;
-
+  
 
 }
+
+
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 a:visited { 
   text-decoration: none; 
   color:black;

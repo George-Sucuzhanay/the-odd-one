@@ -33,10 +33,11 @@ function SearchColleges(){
         <div className="mainDiv">
 
             <div className="search">
-                <h1>My Search</h1>
-                    <input value={searchWord} onChange={(e) => setSearchWord(e.target.value)} className="myInput" placeholder="Enter College Name"/>
+                <h1>Search for Colleges</h1>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                        <input value={searchWord} onChange={(e) => setSearchWord(e.target.value)} className="myInput" placeholder="Enter College Name"/>
 
-                    <button id="searchButton" onClick={gettingResults}type="button">Click Me!</button>
+                        <button id="searchButton" onClick={gettingResults}type="button">Click Me!</button>
             </div>
 
             <br></br>
