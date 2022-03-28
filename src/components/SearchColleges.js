@@ -8,8 +8,9 @@ function SearchColleges(){
     const [searchWord, setSearchWord] = useState("CUNY")
 
     useEffect(() => {
+       
         gettingResults()
-    }, [])
+    }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
     const gettingResults = async() => {
         try{
