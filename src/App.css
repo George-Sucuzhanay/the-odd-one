@@ -25,7 +25,13 @@
 
   text-align: right;
 }
+.subDiv ul {
+  list-style-type: none;
 
+}
+.subDiv li{
+  font-size: 25px;
+}
 .subDiv h1{
   font-size: 50px;
 }

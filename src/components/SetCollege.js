@@ -3,8 +3,9 @@ const SetCollege = ({name, schoolUrl, state, zip, size, coa, tuitionLowPublic, t
    
     return(
 
-        <div className="searchDiv">
         
+        <div className="searchDiv">
+            {console.log(medianIncome)}
             <a href={schoolUrl} target="_blank" rel="noopener noreferrer">
                 <h1 className="collegeName">{name}</h1>
             </a>
@@ -47,7 +48,7 @@ const SetCollege = ({name, schoolUrl, state, zip, size, coa, tuitionLowPublic, t
                         
                     </div>
                     <div className="innerDivItems">
-                        <h3>${medianIncome.toLocaleString('en-US')}</h3>
+                        <h3>{medianIncome ? "$" + medianIncome.toLocaleString('en-US') : "N/A"}</h3>
                     </div>
 
                 </div>

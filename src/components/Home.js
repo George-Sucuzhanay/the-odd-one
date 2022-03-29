@@ -14,9 +14,19 @@ function Home() {
                     <h3>students</h3>
                 </div>
             </div>
-            <div className="homeDiv">
 
-               <h1>Outside</h1>
+            <div className="homeDiv">
+                <div className="homeSubDiv">
+                    <h1>Why use The Odd One?</h1>
+                </div>
+                <div className='homeSubDiv subDiv'>
+                    <ul>
+                        <li>Easily search for college's data</li>
+                        <li>Find the college's school size</li>
+                        <li>Compare colleges by search and location</li>
+                    </ul>
+                </div>
+
             </div>
             
         </div>
